@@ -1,0 +1,10 @@
+{
+    "AUTHOR" : "YGDFLAZ",
+    "SHORT" : "Shitty stock martket stuff",
+    "DESCRIPTION" : "A very basic stock simulation",
+    "DISABLED" : false,
+    "NAME" : "Stocks",
+    "REQUIREMENTS": 
+    "TAGS" : ["stock", "games", "economy"],
+    "INSTALL_MSG" : "thanks for installing my shitty cog"
+}
