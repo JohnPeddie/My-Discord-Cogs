@@ -22,9 +22,9 @@ class invest:
         global shareprice
         global totalshares           
         
-        shares = shares+amount
-        marketcap += (shareprice*amount)
-        shareprice += (amount/totalshares)*shareprice        
+        shares = shares+ammount
+        marketcap += (shareprice*ammount)
+        shareprice += (ammount/totalshares)*shareprice        
         
         
         await self.bot.say("you just purchased {} shares".format(ammount))
@@ -37,9 +37,9 @@ class invest:
         global shareprice
         global totalshares           
         
-        shares = shares+amount
-        marketcap += (shareprice*amount)
-        shareprice += (amount/totalshares)*shareprice         
+        shares = shares+ammount
+        marketcap += (shareprice*ammount)
+        shareprice += (ammount/totalshares)*shareprice         
         
         
         await self.bot.say("you just sold {} shares".format(ammount))
