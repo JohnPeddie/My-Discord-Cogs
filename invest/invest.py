@@ -13,11 +13,11 @@ class invest:
 
         
         
-        await self.bot.say("you just purchased {} shares").format(ammount))
+        await self.bot.say(("you just purchased {} shares").format(ammount))
         
     @commands.command()
     async def sell(self, ammount): 
-        await self.bot.say("you just sold {} shares").format(ammount))
+        await self.bot.say(("you just sold {} shares").format(ammount))
 
 def setup(bot):
     bot.add_cog(invest(bot))
