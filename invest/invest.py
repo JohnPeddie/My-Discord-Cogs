@@ -1,3 +1,6 @@
+import discord
+from discord.ext import commands
+
 class invest:
     """In theory this is an acurate stock sim"""
 
