@@ -14,7 +14,7 @@ class invest:
         self.bot = bot
     
     @commands.command()
-    async def buy(self, ammount):
+    async def buy(self, (int)ammount):
         """this is legit only to see if the thing works and doesnt do anything"""
         global marketcap
         global balance
@@ -30,7 +30,7 @@ class invest:
         await self.bot.say("you just purchased {} shares".format(ammount))
         
     @commands.command()
-    async def sell(self, ammount): 
+    async def sell(self, (int)ammount): 
         global marketcap
         global balance
         global shares
