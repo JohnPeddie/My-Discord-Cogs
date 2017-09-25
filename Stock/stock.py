@@ -23,11 +23,9 @@ shares=0
 
 class stock:
     """Does some funky stock market shit"""
+    
     def __init__(self, bot):
         self.bot = bot
-        self.file_path = "data/stock/stock.json"
-        self.system = dataIO.load_json(self.file_path)
-        self.version = "3.0.06"
     
 
     @stock.command(name="buy", pass_context=True)
@@ -44,7 +42,7 @@ class stock:
         marketcap += (shareprice*amount)
         shareprice += (amount/totalshares)*shareprice
     @stock.command(name="sell", pass_context=True)
-    def sell(amount):
+    async def sell(amount):
         global marketcap
         global balance
         global shares
@@ -89,3 +87,5 @@ def main():
 
     
 main()    
+def setup(bot):
+    bot.add_cog(stock(bot))
