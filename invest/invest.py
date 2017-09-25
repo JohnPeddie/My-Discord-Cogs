@@ -11,9 +11,13 @@ class invest:
     async def buy(self, ammount):
         """this is legit only to see if the thing works and doesnt do anything"""
 
-        #Your code will go here
         
-        await self.bot.say("you have purchased {}".format(ammount))
+        
+        await self.bot.say("you just purchased {} shares").format(ammount)
+        
+    @commands.command()
+    async def sell(self, ammount): 
+        await self.bot.say("you just sold {} shares").format(ammount)
 
 def setup(bot):
     bot.add_cog(invest(bot))
