@@ -13,7 +13,7 @@ class invest:
 
         #Your code will go here
         
-        await self.bot.say("you have purchased", ammount)
+        await self.bot.say("you have purchased {}".format(ammount))
 
 def setup(bot):
     bot.add_cog(invest(bot))
