@@ -12,7 +12,7 @@ class test:
         """idk lol!"""
 
         #Your code will go here
-        await self.bot.say("I can do stuff!")
+        await self.bot.say("I am a massive dn but I think this works")
 
 def setup(bot):
-    bot.add_cog(Mycog(bot))
+    bot.add_cog(test(bot))
