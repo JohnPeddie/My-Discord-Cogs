@@ -12,8 +12,8 @@ class invest:
         """this is legit only to see if the thing works and doesnt do anything"""
 
         #Your code will go here
-        msg = "you just purchased {} shares".format(ammount)
-        await self.bot.say(msg)
+        
+        await self.bot.say("you purchased " + ammount + " shares")
 
 def setup(bot):
     bot.add_cog(invest(bot))
