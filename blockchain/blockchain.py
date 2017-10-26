@@ -2,7 +2,7 @@ import hashlib
 import time
 
 
-# TODO: Sender digitally signs payload. (and recipient too?)
+# TODO: maybe make encrytion
 class Message:
 
     def __init__(self, data, sender=None, receiver=None):
@@ -42,7 +42,7 @@ class Message:
 
 
 
-# TODO: Block creator digitally signs the block to seal it.
+#idk if this seals properly, but it seems to work
 class Block:
 
     def __init__(self, *args):
@@ -72,10 +72,8 @@ class Block:
         self.timestamp = time.time()
         self.hash = self.__get_block_hash()
 
-    # Validates each message hash, then chain integrity, then the block hash.
-    # Calls each message's validate() method.
-    # If a message fails validation, this method captures the exception and 
-    # throws InvalidBlock since an invalid message invalidates the whole block.
+   
+#checks and validates and throws errors at me
     def validate(self):
         for i, msg in enumerate(self.messages):
             try:
