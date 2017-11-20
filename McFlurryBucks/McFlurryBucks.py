@@ -134,6 +134,9 @@ class McFlurryBucks:
     @checks.admin_or_permissions(manage_server=True)
     async def setbalance(self, user, a,b):
         """Sets balances of a user, admin reserved, users look like this: john[aqeel, adam], aqeel[john, adam], adam[aqeel, john]"""
+        global adambalance
+        global aqeelbalance
+        global johnbalance          
         a= int(a)    
         b=int(b)
         if user == "adam":
