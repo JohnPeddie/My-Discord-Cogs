@@ -123,7 +123,7 @@ class McFlurryBucks:
                     aqeelbalance[1]+= amount
                 if x == johnid:
                     aqeelbalance[0]+= amount        
-            await self.bot.say("Amount of {}McB succsefull paid!".format(amount))
+            await self.bot.say("Amount of {}McB successfully paid!".format(amount))
                 
               
        
